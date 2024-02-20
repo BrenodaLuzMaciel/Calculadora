@@ -62,6 +62,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -70,7 +71,7 @@
             // btnDividir
             // 
             this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.Location = new System.Drawing.Point(278, 205);
+            this.btnDividir.Location = new System.Drawing.Point(266, 225);
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(54, 49);
             this.btnDividir.TabIndex = 0;
@@ -81,7 +82,7 @@
             // btnLimpa1
             // 
             this.btnLimpa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpa1.Location = new System.Drawing.Point(279, 126);
+            this.btnLimpa1.Location = new System.Drawing.Point(267, 158);
             this.btnLimpa1.Name = "btnLimpa1";
             this.btnLimpa1.Size = new System.Drawing.Size(53, 49);
             this.btnLimpa1.TabIndex = 1;
@@ -92,7 +93,7 @@
             // btnSomar
             // 
             this.btnSomar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSomar.Location = new System.Drawing.Point(279, 433);
+            this.btnSomar.Location = new System.Drawing.Point(267, 433);
             this.btnSomar.Name = "btnSomar";
             this.btnSomar.Size = new System.Drawing.Size(53, 49);
             this.btnSomar.TabIndex = 2;
@@ -103,7 +104,7 @@
             // btnSubtrair
             // 
             this.btnSubtrair.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtrair.Location = new System.Drawing.Point(279, 363);
+            this.btnSubtrair.Location = new System.Drawing.Point(267, 365);
             this.btnSubtrair.Name = "btnSubtrair";
             this.btnSubtrair.Size = new System.Drawing.Size(53, 49);
             this.btnSubtrair.TabIndex = 3;
@@ -114,7 +115,7 @@
             // btnMultiplicar
             // 
             this.btnMultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.Location = new System.Drawing.Point(279, 282);
+            this.btnMultiplicar.Location = new System.Drawing.Point(267, 295);
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(53, 49);
             this.btnMultiplicar.TabIndex = 4;
@@ -125,7 +126,7 @@
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(29, 205);
+            this.btn1.Location = new System.Drawing.Point(17, 225);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(53, 49);
             this.btn1.TabIndex = 5;
@@ -137,7 +138,7 @@
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(113, 205);
+            this.btn2.Location = new System.Drawing.Point(101, 225);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(53, 49);
             this.btn2.TabIndex = 6;
@@ -148,7 +149,7 @@
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(196, 205);
+            this.btn3.Location = new System.Drawing.Point(184, 225);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(53, 49);
             this.btn3.TabIndex = 7;
@@ -159,7 +160,7 @@
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(29, 282);
+            this.btn4.Location = new System.Drawing.Point(17, 295);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(53, 49);
             this.btn4.TabIndex = 8;
@@ -170,7 +171,7 @@
             // btn5
             // 
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(113, 282);
+            this.btn5.Location = new System.Drawing.Point(101, 295);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(53, 49);
             this.btn5.TabIndex = 9;
@@ -181,7 +182,7 @@
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(196, 282);
+            this.btn6.Location = new System.Drawing.Point(184, 295);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(53, 49);
             this.btn6.TabIndex = 10;
@@ -192,7 +193,7 @@
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(29, 363);
+            this.btn7.Location = new System.Drawing.Point(17, 365);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(53, 49);
             this.btn7.TabIndex = 11;
@@ -203,7 +204,7 @@
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(196, 363);
+            this.btn9.Location = new System.Drawing.Point(184, 365);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(53, 49);
             this.btn9.TabIndex = 12;
@@ -214,7 +215,7 @@
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(113, 363);
+            this.btn8.Location = new System.Drawing.Point(101, 365);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(53, 49);
             this.btn8.TabIndex = 13;
@@ -225,7 +226,7 @@
             // btnIgual
             // 
             this.btnIgual.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIgual.Location = new System.Drawing.Point(196, 433);
+            this.btnIgual.Location = new System.Drawing.Point(184, 433);
             this.btnIgual.Name = "btnIgual";
             this.btnIgual.Size = new System.Drawing.Size(53, 49);
             this.btnIgual.TabIndex = 14;
@@ -236,7 +237,7 @@
             // btn0
             // 
             this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(113, 433);
+            this.btn0.Location = new System.Drawing.Point(101, 433);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(53, 49);
             this.btn0.TabIndex = 15;
@@ -247,7 +248,7 @@
             // btnVirg
             // 
             this.btnVirg.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVirg.Location = new System.Drawing.Point(29, 433);
+            this.btnVirg.Location = new System.Drawing.Point(17, 433);
             this.btnVirg.Name = "btnVirg";
             this.btnVirg.Size = new System.Drawing.Size(53, 49);
             this.btnVirg.TabIndex = 16;
@@ -258,7 +259,7 @@
             // btnLimpaTudo
             // 
             this.btnLimpaTudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpaTudo.Location = new System.Drawing.Point(196, 126);
+            this.btnLimpaTudo.Location = new System.Drawing.Point(184, 158);
             this.btnLimpaTudo.Name = "btnLimpaTudo";
             this.btnLimpaTudo.Size = new System.Drawing.Size(53, 49);
             this.btnLimpaTudo.TabIndex = 17;
@@ -290,7 +291,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(357, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(334, 25);
             this.bindingNavigator1.TabIndex = 18;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -382,18 +383,35 @@
             // 
             // txtDisplay
             // 
+            this.txtDisplay.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisplay.Location = new System.Drawing.Point(29, 49);
+            this.txtDisplay.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtDisplay.Location = new System.Drawing.Point(0, 66);
             this.txtDisplay.Multiline = true;
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(303, 57);
+            this.txtDisplay.Size = new System.Drawing.Size(333, 57);
             this.txtDisplay.TabIndex = 19;
+            this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.BackColor = System.Drawing.SystemColors.ControlText;
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtTotal.Location = new System.Drawing.Point(0, 36);
+            this.txtTotal.Multiline = true;
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(333, 32);
+            this.txtTotal.TabIndex = 20;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // frmCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 526);
+            this.ClientSize = new System.Drawing.Size(334, 526);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.bindingNavigator1);
             this.Controls.Add(this.btnLimpaTudo);
@@ -461,6 +479,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.TextBox txtDisplay;
+        private System.Windows.Forms.TextBox txtTotal;
     }
 }
 

@@ -18,7 +18,7 @@ namespace Calculadora
             InitializeComponent();
         }
 
-        List<string> list = new List<string>();
+        double num1 = 0.0;
         double num2 = 0.0;
         double result = 0.0;
         string option = string.Empty;
@@ -26,84 +26,104 @@ namespace Calculadora
 
 
 
-        private void button18_Click(object sender, EventArgs e)
-        {
-            txtDisplay.Clear();
-        }
-
         private void btn1_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn1.Text;
+
+            txtDisplay.Text += "1";
+            txtTotal.Text += "1";
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn2.Text;
+            txtDisplay.Text += "2";
+            txtTotal.Text += "2";
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn3.Text;
+            txtDisplay.Text += "3";
+            txtTotal.Text += "3";
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn4.Text;
+            txtDisplay.Text += "4";
+            txtTotal.Text += "4";
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn5.Text;
+            txtDisplay.Text += "5";
+            txtTotal.Text += "5";
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn6.Text;
+            txtDisplay.Text += "6";
+            txtTotal.Text += "6";
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn7.Text;
+            txtDisplay.Text += "7";
+            txtTotal.Text += "7";
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn8.Text;
+            txtDisplay.Text += "8";
+            txtTotal.Text += "8";
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn9.Text;
+            txtDisplay.Text += "9";
+            txtTotal.Text += "9";
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btn0.Text;
+            txtDisplay.Text += "0";
+            txtTotal.Text += "0";
         }
 
         private void btnDividir_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btnDividir.Text;
+            num1 = double.Parse(txtDisplay.Text, CultureInfo.InvariantCulture);
+            txtDisplay.Clear();
+            txtTotal.Text += "/";
         }
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
+            txtDisplay.Clear();
             txtDisplay.Text = txtDisplay.Text + btnMultiplicar.Text;
+            txtTotal.Text += "*";
         }
 
         private void btnSubtrair_Click(object sender, EventArgs e)
         {
+            txtDisplay.Clear();
             txtDisplay.Text = txtDisplay.Text + btnSubtrair.Text;
+            txtTotal.Text += "-";
         }
 
         private void btnSomar_Click(object sender, EventArgs e)
         {
-
+            txtDisplay.Clear();
+            txtDisplay.Text = txtDisplay.Text + btnSomar.Text;
+            txtTotal.Text += "+";
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text + btnIgual.Text;
+            num2 = double.Parse(txtDisplay.Text);
+            txtDisplay.Clear();
+            txtDisplay.Text = "=";
+            result = num1 / num2;
+            txtTotal.Text = txtTotal.Text + "=" + result.ToString();
+            txtDisplay.Text = result.ToString();
+
         }
 
         private void btnVirg_Click(object sender, EventArgs e)
@@ -113,9 +133,24 @@ namespace Calculadora
 
         private void btnLimpa1_Click(object sender, EventArgs e)
         {
-            string apagar = txtDisplay.Text;
+            string apagar = txtTotal.Text;
             apagar = apagar.Remove(apagar.Length - 1);
-            txtDisplay.Text = apagar;
+            txtTotal.Text = apagar;
+
+            string apagar2 = txtDisplay.Text;
+            apagar2 = apagar2.Remove(apagar2.Length - 1);
+            txtDisplay.Text = apagar2;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Clear();
+            txtTotal.Clear();
+        }
+
+        private void txtTotal_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

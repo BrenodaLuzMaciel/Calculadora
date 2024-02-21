@@ -118,7 +118,7 @@ namespace Calculadora
 
         private void btnSomar_Click(object sender, EventArgs e)
         {
-            num1 = double.Parse(txtDisplay.Text, CultureInfo.InvariantCulture);
+            num1 = double.Parse(txtDisplay.Text);
             txtDisplay.Clear();
             txtTotal.Text += "+";
             opcao = "+";
@@ -126,12 +126,12 @@ namespace Calculadora
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            num2 = double.Parse(txtDisplay.Text, CultureInfo.InvariantCulture);
+            num2 = double.Parse(txtDisplay.Text);
 
             switch (opcao)
             {
                 case "+":
-                    resultado = (num1 + num2).ToString();
+                    resultado = (num1 + num2).ToString("F1", CultureInfo.InvariantCulture);
                     break;
                 case "-":
                     resultado = (num1 - num2).ToString();

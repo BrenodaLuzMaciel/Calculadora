@@ -20,9 +20,8 @@ namespace Calculadora
 
         double num1 = 0.0;
         double num2 = 0.0;
-        double result = 0.0;
-        string option = string.Empty;
-        string total = string.Empty;
+        string resultado = string.Empty;
+        string opcao = string.Empty;
 
 
 
@@ -87,52 +86,75 @@ namespace Calculadora
             txtTotal.Text += "0";
         }
 
+        private void btnVirg_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text += ",";
+            txtTotal.Text += ",";
+        }
+
         private void btnDividir_Click(object sender, EventArgs e)
         {
             num1 = double.Parse(txtDisplay.Text, CultureInfo.InvariantCulture);
             txtDisplay.Clear();
             txtTotal.Text += "/";
+            opcao = "/";
         }
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
+            num1 = double.Parse(txtDisplay.Text, CultureInfo.InvariantCulture);
             txtDisplay.Clear();
-            txtDisplay.Text = txtDisplay.Text + btnMultiplicar.Text;
             txtTotal.Text += "*";
+            opcao = "*";
         }
 
         private void btnSubtrair_Click(object sender, EventArgs e)
         {
+            num1 = double.Parse(txtDisplay.Text, CultureInfo.InvariantCulture);
             txtDisplay.Clear();
-            txtDisplay.Text = txtDisplay.Text + btnSubtrair.Text;
             txtTotal.Text += "-";
+            opcao = "-";
         }
 
         private void btnSomar_Click(object sender, EventArgs e)
         {
+            num1 = double.Parse(txtDisplay.Text, CultureInfo.InvariantCulture);
             txtDisplay.Clear();
-            txtDisplay.Text = txtDisplay.Text + btnSomar.Text;
             txtTotal.Text += "+";
+            opcao = "+";
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            num2 = double.Parse(txtDisplay.Text);
+            num2 = double.Parse(txtDisplay.Text, CultureInfo.InvariantCulture);
+
+            switch (opcao)
+            {
+                case "+":
+                    resultado = (num1 + num2).ToString();
+                    break;
+                case "-":
+                    resultado = (num1 - num2).ToString();
+                    break;
+                case "/":
+                    resultado = (num1 / num2).ToString();
+                    break;
+                case "*":
+                    resultado = (num1 * num2).ToString();
+                    break;
+            }
+
             txtDisplay.Clear();
             txtDisplay.Text = "=";
-            result = num1 / num2;
-            txtTotal.Text = txtTotal.Text + "=" + result.ToString();
-            txtDisplay.Text = result.ToString();
 
-        }
+            resultado.ToString();
+            txtTotal.Text = txtTotal.Text + "=" + resultado.ToString(CultureInfo.InvariantCulture);
+            txtDisplay.Text = resultado.ToString(CultureInfo.InvariantCulture);
 
-        private void btnVirg_Click(object sender, EventArgs e)
-        {
-            txtDisplay.Text = txtDisplay.Text + btnVirg.Text;
         }
 
         private void btnLimpa1_Click(object sender, EventArgs e)
-        {
+        {   
             string apagar = txtTotal.Text;
             apagar = apagar.Remove(apagar.Length - 1);
             txtTotal.Text = apagar;
